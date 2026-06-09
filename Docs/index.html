@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Page Title</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../Docs/CSS/index.css">
+</head>
+
+<body>
+
+  <div class="grid-bg"></div>
+
+  <header>
+    <h1>Meu blog</h1>
+  </header>
+
+  <nav class="navbar">
+    <div>
+      <a href="../Pages/lyrics.html">Playlist</a>
+      <a href="../Pages/About.html">Sobre mim</a>
+      <a href="../Pages/contact.html">Entre em contato</a>
+      <a href="../Pages/receitas.html">Receitas</a>
+      <a href="../Pages/curriculum.html">Curriculo</a>
+    </div>
+    <div>
+      <button onclick="mudarFonte(-1)">A-</button>
+      <button onclick="mudarFonte(+1)">A+</button>
+      <button onclick="alternarTema()" id="tema">
+        <img id="icone-tema" src="../Docs/Assets/dark_mode_44dp_1F1F1F_FILL0_wght400_GRAD0_opsz48.svg" alt="Tema"
+          width="24" height="24">
+      </button>
+    </div>
+  </nav>
+
+  <div class="container">
+
+    <aside>
+      <h2>Atualizações</h2>
+      <ul>
+        <li>Tamanhos de fontes adicionados</li>
+        <li>Curriculo adicionado</li>
+        <li>DarkMode adicionado</li>
+        <li>Página de contato adicionada</li>
+        <li>Mousse adicionado</li>
+        <li>Novas receitas adicionadas</li>
+        <li>Adicionada a página de receitas</li>
+        <li>Tags semânticas adicionadas nas demais páginas.</li>
+      </ul>
+
+    </aside>
+
+    <main>
+      <article class="resumo">
+        <h2>Resumo</h2>
+        <time datetime="2026-05-22">
+          <h5>22/05/2026</h5>
+        </time>
+
+        <p>Olá, sou Vitor Hugo Correa. Este é meu espaço pessoal na web, onde compartilho um pouco sobre quem sou, o que
+          gosto e o que estou aprendendo.</p>
+        <p>Aqui você vai encontrar receitas que gosto, músicas que ouço, e atualizações sobre minha trajetória acadêmica
+          e profissional.</p>
+        <p>Fique à vontade para explorar as páginas e entrar em contato!</p>
+      </article>
+    </main>
+
+  </div>
+
+  <footer>
+    <div class="logo">VHC ✦</div>
+    <div>Vitor Hugo Correa · Passo Fundo, RS · 2026</div>
+  </footer>
+
+  <script src="../Docs/JS/js.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <title>Email</title>
+  <link rel="stylesheet" href="../Docs/CSS/contato.css">
+</head>
+
+<body>
+  <div class="grid-bg"></div>
+  <header>
+    <h1>Contato</h1>
+  </header>
+  <nav>
+    <div>
+      <ul>
+        <li><a href="../Docs/Index.html">Ínicio</a></li>
+        <li><a href="../Pages/About.html">Sobre mim</a></li>
+        <li><a href="../Pages/receitas.html">Receitas</a><br></li>
+        <li><a href="../Pages/lyrics.html">Playlist</a></li>
+        <li><a href="../Pages/curriculum.html">Curriculo</a></li>
+      </ul>
+    </div>
+    <div>
+      <button onclick="mudarFonte(-1)">A-</button>
+      <button onclick="mudarFonte(+1)">A+</button>
+      <button onclick="alternarTema()" id="tema">
+        <img id="icone-tema" src="../Docs/Assets/dark_mode_44dp_1F1F1F_FILL0_wght400_GRAD0_opsz48.svg" alt="Tema"
+          width="24" height="24">
+    </div>
+  </nav>
+  <form action="#" method="post">
+
+    <p>
+      <label for="nome">Nome:</label><br>
+      <input type="text" id="nome" name="nome" required>
+    </p>
+
+    <p>
+      <label for="email">E-mail:</label><br>
+      <input type="email" id="email" name="email" required>
+    </p>
+
+    <p>
+      <label for="telefone">Telefone:</label><br>
+      <input type="tel" id="telefone" name="telefone">
+    </p>
+
+    <p>
+      <label for="assunto">Assunto:</label><br>
+      <select id="assunto" name="assunto">
+        <option value="">Selecione...</option>
+        <option value="orcamento">Orçamento</option>
+        <option value="suporte">Suporte</option>
+        <option value="parceria">Parceria</option>
+        <option value="outro">Outro</option>
+      </select>
+    </p>
+
+    <p>
+      <label for="mensagem">Mensagem:</label><br>
+      <textarea id="mensagem" name="mensagem" rows="5" cols="40"></textarea>
+    </p>
+
+    <p>
+      <input type="checkbox" id="privacidade" name="privacidade" required>
+      <label for="privacidade">Concordo com a política de privacidade</label>
+    </p>
+
+    <p>
+      <input type="submit" value="Enviar">
+      <input type="reset" value="Limpar">
+    </p>
+
+  </form>
+
+  <script src="../Docs/JS/js.js"></script>
+</body>
+
+</html>

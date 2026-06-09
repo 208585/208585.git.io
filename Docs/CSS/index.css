@@ -1,0 +1,109 @@
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  flex: 1;
+}
+.grid-bg {
+  pointer-events: none;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial;
+  margin: 0;
+}
+header {
+  padding: 60px;
+  border-radius: 20px;
+  text-align: center;
+  background: blueviolet;
+  color: black;
+}
+nav.navbar {
+  list-style: none;
+  border-radius: 20px;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  display: flex;
+  background-color: #D8B4FE;
+}
+nav.navbar a {
+  color: black;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+nav.navbar a:hover {
+  background-color: transparent;
+  color: black;
+}
+.container {  
+  display: flex;
+  flex-wrap: wrap;
+}
+aside {
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+main {
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+@media screen and (max-width: 700px) {
+  .container, nav.navbar {   
+    flex-direction: column;
+  }
+}
+.grid-bg {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.08) 1px, transparent 1px);
+  background-size: 50px 50px;
+  mask-image: radial-gradient(ellipse 80% 80% at 50% 50%, black 20%, transparent 100%);
+}
+
+
+body.dark {
+  background-color: #1a1a2e;
+  color: #e0e0e0;
+}
+body.dark header {
+  background: #2d1b69;
+}
+body.dark nav.navbar {
+  background-color: #3d2b8a;
+}
+body.dark nav.navbar a {
+  color: #e0e0e0;
+}
+body.dark aside {
+  background-color: #16213e;
+  color: #e0e0e0;
+}
+body.dark main {
+  background-color: #1a1a2e;
+}
+body.dark footer {
+  background: #0f3460;
+  color: #e0e0e0;
+}
